@@ -1,125 +1,111 @@
-
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
 
 *{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
-} 
-h2{
-    color: red;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
 }
-nav{
-    width:100%;
-    background-color: #000000;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    top: 0;
-    position: fixed;
+.navbar{
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	padding:25px 0;
 }
-nav ul{
-    display:flex;
-    justify-content: center;
-    align-items:center;
+.navbar .logo{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 750;
+	letter-spacing: 2px;
 }
-nav ul li{
-    list-style: none;
-    padding: 0px 5px;
+.navbar ul.nav{
+	margin-right: 15%;
 }
-nav ul li a{
-    color: #ffffff;
-    font-size: 15px;
-    text-decoration: none;
-} 
+.navbar ul.nav li.active,
+.navbar ul.nav li:hover{
+	background:rgba(255, 255, 255, 0.5);
+	color: #000;
 
-
-
-
-
-
-
-
-
-
-
-/* .containersub{
-    color: black;
+}
+.navbar ul.nav li a{
+	color: #fff;
+	font-size: 1em;
+	font-weight: 500;
+}
+.navbar ul.nav li.active a,
+.navbar ul.nav li:hover a{
+	color: #000;
 }
 
-
-
-
-
- *
-
-
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+/*slider*/
+#carouselExampleIndicators{
+	position: relative;
+	height: 100vh;
+	width: 100%;
 }
-body {
-  min-height: 100vh;
-  background: url("background.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
+#carouselExampleIndicators .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #000;
 }
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 100px;
-  background: rgba(255, 255, 255, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  backdrop-filter: blur(10px);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  z-index: 100;
+#carouselExampleIndicators .carousel-inner:before{
+	position: absolute;
+	content: '';
+	background: rgba(0, 0, 0, 0.45);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
 }
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
-  transition: 0.5s;
+#carouselExampleIndicators .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url('https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
 }
-.header:hover::before {
-  left: 100%;
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
+	background: url('https://images.pexels.com/photos/256937/pexels-photo-256937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
 }
-.logo {
-  color: #fff;
-  font-size: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  cursor: default;
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
+	background: url('https://images.pexels.com/photos/1064162/pexels-photo-1064162.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
 }
-.navbar a {
-  color: #fff;
-  font-size: 18px;
-  text-decoration: none;
-  margin-left: 35px;
-  transition: 0.3s;
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
 }
-.navbar a:hover {
-  color: #f00;
+#carouselExampleIndicators .carousel-inner .carousel-item h1{
+	height: auto;
+	color: #fff;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 5.5em;
+	font-weight: 750;
 }
-#menu-icon {
-  font-size: 36px;
-  color: #fff;
-  display: none;
-} */
+#carouselExampleIndicators .carousel-inner .carousel-item p{
+	height: auto;
+	color: #ccc;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+}
