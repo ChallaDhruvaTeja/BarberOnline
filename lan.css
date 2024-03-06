@@ -1,0 +1,103 @@
+
+
+
+
+
+.why {
+
+    height: 140vh;
+    width: 100vh;
+    background-color: rgb(155, 48, 48);
+    background-size: cover;
+    outline: 1px solid;
+    column-gap: 40px;
+    row-gap: 15px;
+    padding-top: 120px;
+}
+
+.choose {
+    color: rgba(236, 234, 231, 0.925);
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.color {
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 15px;
+}
+
+h3 {
+    align-items: center;
+    color: black;
+}
+
+
+
+.subservices {
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+
+}
+
+.img-small {
+    background-color: white;
+    border-radius: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    filter: invert(1);
+    border: 2px solid white;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    margin-bottom: 4px;
+}
+
+.subservices2 {
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    height: 25px;
+    width: 200px;
+    display: inline-block;
+    background-color: aliceblue;
+    padding-left: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 12px;
+
+
+}
+
+.customer3 {
+    text-align: center;
+    font-size: 13px;
+}
+
+.image2 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.colour1 {
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
